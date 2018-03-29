@@ -33,8 +33,7 @@ LEFT JOIN Employees AS emp ON;
 /* 
 Routines:
 	1. PROCEDURE
-    2. FUNCTION
-    3. TRIGGER- executed when there is a change to the database (no need to write update, delete statements)
-    
+	2. FUNCTION
+	3. TRIGGER (executed when there is a change to the database; no need to write update, delete statements)
 Spatial and temporal data (geographical data)
 */
