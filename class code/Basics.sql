@@ -223,18 +223,15 @@ SELECT *
 FROM share
 WHERE shrfirm BETWEEN 'A' AND 'O';
 
-/*
-UPDATE anomalies when we try to update multiple rows in a table
-DELETE anomalies
-INSERT anomalies
-The referential integrity constraint
-*/
-
 USE ClassicModels;
 
 SELECT customerName, phone
 FROM (SELECT customerName, phone, state FROM Customers WHERE country = 'USA') AS table2
 WHERE table2.state = 'NY';
 
-
-
+/*
+UPDATE anomalies when we try to update multiple rows in a table
+DELETE anomalies
+INSERT anomalies
+The referential integrity constraint
+*/
