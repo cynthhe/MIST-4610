@@ -90,7 +90,3 @@ CALL TP_Q7;
 CALL TP_Q8;
 CALL TP_Q9;
 CALL TP_Q10;
-
-
-
-
