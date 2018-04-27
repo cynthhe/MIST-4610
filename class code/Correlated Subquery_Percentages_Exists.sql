@@ -1,6 +1,5 @@
 USE ClassicModels;
 
-
 SELECT *
 FROM Orders 
 JOIN OrderDetails ON Orders.orderNumber = OrderDetails.orderNumber
@@ -27,11 +26,7 @@ JOIN OrderDetails ON Orders.orderNumber = OrderDetails.orderNumber
 JOIN Products ON OrderDetails.productCode = Products.productCode
 GROUP BY Customers.customerNumber;
 
-
-
-
 USE Text;
-
 
 SELECT * FROM item;
 SELECT * FROM lineitem;
@@ -41,7 +36,6 @@ SELECT *
 FROM item
 WHERE NOT EXISTS 
 (SELECT * FROM lineitem WHERE item.itemno = lineitem.itemno);
-
 
 USE ClassicModels;
 
@@ -59,7 +53,6 @@ WHERE quantityInStock > 5000;
 SELECT productName
 FROM Products
 WHERE MSRP > 2*buyPrice;
-
 
 SELECT productName
 FROM Products
