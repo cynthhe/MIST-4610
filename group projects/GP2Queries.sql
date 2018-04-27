@@ -98,7 +98,3 @@ JOIN DAILY
 ON CITY.cityID = DAILY.cityID
 GROUP BY CITY.cityID
 HAVING MIN(USER.userID);
-
-
-
-
