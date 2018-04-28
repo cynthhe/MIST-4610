@@ -7,7 +7,6 @@ CREATE TABLE STUDENT(
 	PRIMARY KEY(810Number)
 );
 
-
 INSERT INTO STUDENT(810Number,lName,fName,dateOfBirth,major) 
 VALUES (811111113,'Huber','Mark','1999-01-01','MIS');
 
