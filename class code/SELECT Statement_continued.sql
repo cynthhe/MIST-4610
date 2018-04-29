@@ -35,7 +35,6 @@ SELECT shrfirm, shrprice
 FROM share
 WHERE shrpe > (SELECT AVG(shrpe) FROM share);
 
-
 SELECT shrcode, shrprice, shrfirm
 FROM share
 WHERE shrfirm REGEXP 'Geese|Gold|Ruby';
@@ -86,4 +85,3 @@ WHERE shrprice BETWEEN 20 AND 40;
 SELECT * 
 FROM share
 WHERE shrfirm BETWEEN 'A' AND 'O';
-
