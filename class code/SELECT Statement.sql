@@ -22,13 +22,11 @@ SELECT shrfirm, shrprice, shrpe
 FROM share
 WHERE shrcode IN ('BE','AR','NG');
 
-
 SELECT shrfirm, shrprice, shrpe
 FROM share
 WHERE shrcode NOT IN ('BE','AR','NG');
 
 USE Chapter3;
-
 
 SELECT *
 FROM student;
@@ -66,4 +64,3 @@ FROM share;
 
 SELECT shrfirm, shrprice*shrqty AS 'Value of Shares'
 FROM share;
-
