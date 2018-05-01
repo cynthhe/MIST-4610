@@ -1,6 +1,6 @@
 # Q1
 SELECT customerName, status, COUNT(*)
-FROM Customers JOIN Orders on Customers.customerNumber = Orders.customerNumber
+FROM Customers JOIN Orders ON Customers.customerNumber = Orders.customerNumber
 GROUP BY customerName, status;
 
 # Q2
@@ -13,7 +13,7 @@ ORDER BY COUNT(*) DESC;
 
 # Q3
 SELECT country, 100*COUNT(*)/(SELECT COUNT(*) FROM Orders)
-FROM Customers JOIn Orders
+FROM Customers JOIN Orders
 ON Customers.customerNumber = Orders.customerNumber
 GROUP BY country
 ORDER BY 100*COUNT(*)/(SELECT COUNT(*) FROM Orders) DESC;
@@ -26,8 +26,8 @@ GROUP BY productCode;
 
 # Q5
 SELECT boss.firstName, boss.lastName, boss.jobTitle, worker.firstName, worker.lastName, worker.jobTitle
-FROM Employees as boss
-JOIN Employees as worker
+FROM Employees AS boss
+JOIN Employees AS worker
 ON boss.employeeNumber = worker.reportsTo
 WHERE boss.lastName = worker.lastName;
 
