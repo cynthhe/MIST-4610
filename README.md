@@ -1,4 +1,4 @@
-# MIST 4610
+# MIST 4610 :bar_chart:
 This repo contains all SQL files, data models, and spreadsheets used in this class.
 ## Course Description :books:
 ###### Data Managment and Analytics
